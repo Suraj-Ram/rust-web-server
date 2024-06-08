@@ -1,0 +1,37 @@
+--2024-06-08 12:01:53--  http://localhost:7878/
+Resolving localhost (localhost)... ::1, 127.0.0.1
+Connecting to localhost (localhost)|::1|:7878... failed: Connection refused.
+Connecting to localhost (localhost)|127.0.0.1|:7878... connected.
+HTTP request sent, awaiting response... No data received.
+Retrying.
+
+--2024-06-08 12:01:54--  (try: 2)  http://localhost:7878/
+Connecting to localhost (localhost)|127.0.0.1|:7878... connected.
+HTTP request sent, awaiting response... No data received.
+Retrying.
+
+--2024-06-08 12:01:56--  (try: 3)  http://localhost:7878/
+Connecting to localhost (localhost)|127.0.0.1|:7878... connected.
+HTTP request sent, awaiting response... No data received.
+Retrying.
+
+--2024-06-08 12:01:59--  (try: 4)  http://localhost:7878/
+Connecting to localhost (localhost)|127.0.0.1|:7878... connected.
+HTTP request sent, awaiting response... No data received.
+Retrying.
+
+--2024-06-08 12:02:03--  (try: 5)  http://localhost:7878/
+Connecting to localhost (localhost)|127.0.0.1|:7878... connected.
+HTTP request sent, awaiting response... No data received.
+Retrying.
+
+--2024-06-08 12:02:08--  (try: 6)  http://localhost:7878/
+Connecting to localhost (localhost)|127.0.0.1|:7878... connected.
+HTTP request sent, awaiting response... No data received.
+Retrying.
+
+--2024-06-08 12:02:14--  (try: 7)  http://localhost:7878/
+Connecting to localhost (localhost)|127.0.0.1|:7878... connected.
+HTTP request sent, awaiting response... No data received.
+Retrying.
+
