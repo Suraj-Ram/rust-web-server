@@ -6,20 +6,24 @@ use std::{
     time::Duration,
 };
 
+use web_server::ThreadPool;
+
 const SUCCESS_LINE: &str = "HTTP/1.1 200 OK";
 const NOT_FOUND_LINE: &str = "HTTP/1.1 404 NOT FOUND";
+const NUM_THREADS: usize = 4;
 
 fn main() {
     println!("Hello from web server! Running on port 7878...");
 
     let listener = TcpListener::bind("127.0.0.1:7878").unwrap();
+    let pool = ThreadPool::new(NUM_THREADS);
+    println!("Spawned {} threads.", NUM_THREADS);
 
     for stream in listener.incoming() {
         let stream = stream.unwrap();
-        thread::spawn(|| {
-            println!("spawned thread");
+        pool.execute(|| {
             handle_connection(stream);
-        });
+        })
     }
 }
 
